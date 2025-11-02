@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: screen;
+  height: 100vh;
+  background-color: #fffeff;
+}
+header {
+  width: screen;
+  height: 70px;
+  background-color: #0d9488;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.nav{
+  font-size: 35px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+header ul {
+  display: flex;
+  font-size: larger;
+  gap: 50px;
+  list-style-type: none;
+  justify-content: right;
+  padding: 15px;
+}
+main {
+  width: screen;
+}
+
+#hero {
+  margin-top: 85px;
+}
+.hero-all {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.hero-text {
+  width: 30vw;  
+}
+.hero-text h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: 1000px;
+  text-align: left;
+}
+.hero-text p {
+  font-size: 25px;
+}
+#our-rockets {
+  margin-top: 100px;
+  width: inherit;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  font-weight: 400px;
+  text-align: center;
+}
+.rockets ul {
+  margin-top: 30px;
+  display: flex;
+  padding: 3% 10% ;
+  align-items: center;
+  justify-content: space-around;
+  list-style-type: none;
+}
+.rocket-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 25%;
+  border: 1px solid #0f172a;
+  border-radius: 1.5rem;
+  background-color: #ffffff;
+  padding: 35px; 
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /
+}
+.rocket-image img {
+  width: 142px;
+  height: 112px;
+  }
+.rocket-image:hover {
+  background-color: #0d9488;
+  transform: rotateY(360deg);
+  transition: 3s;
+}
+.rocket-image p{
+  font-size: 30px;
+  text-align: center;
+}
+#testimonials {
+  width: screen;
+  margin:60px 200px;
+}
+#testimonials figure {
+  width: 65vw;
+  margin-top: 40px;
+}
+#testimonials blockquote {
+  position: relative;
+  background-color: #0d9488;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 3rem 2rem 3rem 3.5rem;
+}
+
+.test {
+  margin-top: 0.5rem;
+  font-size: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  line-height: 1.15;
+}
+.italic {
+  font-style: italic;
+}
+
+#testimonials figcaption {
+  text-align: right;
+  margin-top: 0.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #64748b;
+}
+#contact {
+  width: screen;
+  margin:60px 200px;
+  padding: 1.5rem;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 64rem; 
+  margin: 0 auto;
+  font-size: 1.25rem; 
+}
+
+#contact input,
+#contact textarea {
+  border: 1px solid #0f172a;
+  border-radius: 0.75rem; 
+  padding: 0.75rem;
+  color: #000;
+  font-size: inherit;
+}
+
+#contact button {
+  width: 150px; 
+  border: 1px solid #0f172a;
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  background-color: #0f766e; 
+  color: #ffffff;
+  font-size: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+  background-color: #0d9488; 
+}
+
+#contact button:active {
+  background-color: #14b8a6; 
+}
+
+#footer {
+  width: screen;
+  background-color: #0f766e;
+  color: white;
+  padding: 1rem 7rem;
+}
+
+.footer-all{
+  font-size: 20px;
+  line-height: 1.6;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-address a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-nav { 
+ display: flex;
+ flex-direction: column;
+} 
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* ================================
+   💻 Screen up to 1024px (Tablet)
+   ================================ */
+@media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+
+  .nav {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  header ul {
+    gap: 25px;
+    font-size: 18px;
+  }
+
+  .hero-all {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 0 30px;
+  }
+
+  .hero-text {
+    width: 80vw;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 35px;
+  }
+
+  .hero-text p {
+    font-size: 20px;
+  }
+
+  .rockets ul {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .rocket-image {
+    width: 40%;
+  }
+
+  #testimonials {
+    margin: 50px 100px;
+  }
+
+  #contact {
+    margin: 50px 100px;
+  }
+
+  #footer {
+    padding: 2rem 4rem;
+  }
+
+  .footer-all {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .nav {
+    font-size: 22px;
+  }
+
+  .navs {
+    display: none; 
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .hero-all {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero-text {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-img img {
+    width: 85%;
+    height: auto;
+  }
+
+  .rockets ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .rocket-image {
+    width: 80%;
+  }
+
+  #testimonials {
+    margin: 30px 20px;
+  }
+
+  #testimonials blockquote {
+    padding: 2rem 1.5rem;
+    font-size: 18px;
+  }
+
+  #contact {
+    margin: 30px 20px;
+  }
+
+  #contact form {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  #contact input,
+  #contact textarea {
+    font-size: 1rem;
+  }
+
+  #contact button {
+    width: 100%;
+  }
+
+  #footer {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-all {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
